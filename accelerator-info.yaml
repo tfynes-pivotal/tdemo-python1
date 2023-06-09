@@ -1,0 +1,17 @@
+id: 70c3428d-86e0-4840-8f5b-fe631b591f25
+timestamp: 2023-06-09T17:55:13Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: python-function
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:06ef79ba0d2b42cce6f630525e7844f50b8aa4b4ddd75bf47b12bd772f9ff925
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  functionName: test
+  includeTap: true
+  interfaceType: http
+  projectName: tdemo-python1
